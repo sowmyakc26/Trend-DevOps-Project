@@ -73,6 +73,10 @@ screenshots:
 <img width="1353" height="762" alt="loadbalancer url" src="https://github.com/user-attachments/assets/715005a5-307a-4efb-a310-1a457fe45fbb" />
 
 
+<img width="652" height="413" alt="monitoring" src="https://github.com/user-attachments/assets/dd6b4d51-44e6-4e29-82d1-f8a80d4526d2" />
+
+
+
 
 
 
