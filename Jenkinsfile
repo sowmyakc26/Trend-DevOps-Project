@@ -5,14 +5,19 @@ pipeline {
         DOCKER_IMAGE = "skc26/trend-app:latest"
         DOCKER_CREDS = "docker-hub-creds"
     }
-
-    stages {
-        stage('Checkout') {
+ stages {
+        stage('Cleanup') {
             steps {
-                git 'https://github.com'
+                cleanWs() // This fixes the "Error fetching remote" by wiping broken files
             }
         }
-
+        stage('Checkout') {
+            steps {
+                // Ensure this URL is your repo
+                git 'https://github.com/sowmyakc26/Trend-DevOps-Project.git'
+            }
+        }
+   
         stage('Docker Build & Push') {
             steps {
                 script {
