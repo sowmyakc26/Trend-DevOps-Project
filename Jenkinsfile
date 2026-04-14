@@ -14,7 +14,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Ensure this URL is your repo
-                git 'https://github.com/sowmyakc26/Trend-DevOps-Project.git'
+                 git branch: 'main', url: 'https://github.com/sowmyakc26/Trend-DevOps-Project.git'
             }
         }
    
